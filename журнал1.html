@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Волонтерство</title>
+</head>	
+<style>
+	
+	body{
+		background-image: url('puctures/фон журнал1.png');
+		background-repeat: no-repeat;
+		background-size: 2000px;
+		font-family:  cursive;
+		font-size: 30px;
+		color: #BAAF96;
+			
+	}
+	
+	.title{
+		font-size: 50px;
+		color: #BAAF96;
+		
+	}
+	
+	.exit{
+		background-color: rgba(28,28,28,0);
+		cursor: pointer;
+		border: 0;
+		margin-right: 50px;
+		
+	}
+	
+	.more{
+		background-color: rgba(28,28,28,0);
+		cursor: pointer;
+		border: 0;
+		
+		
+	}
+	
+	.chapter{
+		font-size: 50px;
+		color: #BAAF96;
+		margin-top: 20px;
+	}
+	
+	.mommy{
+		
+		border: 1px solid #BAAF96;
+	}
+	
+	
+	
+	.block{
+		
+		width: 300px;
+		height: 300px;
+		margin-left: 50px;
+		margin: 20px;
+		text-align: center;
+		border: 0;
+		border-radius: 15px;
+		display: inline-block;
+		border: 1px solid #BAAF96;
+	}
+	
+	.image{
+		
+	}
+	
+	.text{
+		font-size: 20px;
+		color: white;
+	}
+	
+	hr{
+		border: none; 
+		background-color: #BAAF96; 
+		color: #BAAF96; 
+		height: 2px;
+	}
+	
+	button{
+		font-size: 40px;
+		text-align: right;
+		background-color: rgba(28,28,28,0);
+		border: 0;
+		user-select: none;
+		color: #DBD7D2;
+	}
+	
+	.active {
+		color: red;
+	}
+	
+</style>
+<body>
+	<div class="title"><button type="button" class="exit"><img src="puctures/назад1.png" alt="me" width="50" height="50"></button><b>1000 Объявлений</b></div>
+	<hr></hr>
+	<div class="chapter"><b>Собаки</b></div>
+	<div class="mommy">	
+		<div class="block">
+			<img src="puctures/объявление1.jpg" width="100%" height="150"><div class="text"><p><h2>Хвостатый марш</h2></p><button id ="like1">&#x2764;</button></div>
+		</div>
+			 
+		<div class="block">
+			<img src="puctures/объявление2.jpg" width="100%" height="150"><div class="text"><p><h2>Хвостатый марш</h2></p><button id ="like2">&#x2764;</button></div>		
+		</div>
+			
+		<div class="block">
+			<img src="puctures/объявление3.jpg" width="100%" height="150"><div class="text"><p><h2>Хвостатый марш</h2></p><button id ="like3">&#x2764;</button></div>		
+		</div>
+			
+		<div class="block">
+			<img src="puctures/объявление1.jpg" width="100%" height="150"><div class="text"><p><h2>Хвостатый марш</h2></p><button id ="like4">&#x2764;</button></div>	
+		</div>
+	
+		<div class="block">
+			<img src="puctures/объявление2.jpg" width="100%" height="150"><div class="text"><p><h2>Хвостатый марш</h2></p><button id ="like5">&#x2764;</button></div>
+		</div>	
+		<button type="button" class="more"><img src="puctures/еще.png" alt="me" width="60" height="60"></button>
+	</div>
+	<div class="chapter"><b>Кошки</b></div>
+	
+	<div class="mommy">	
+		<div class="block">
+			<img src="puctures/объявление1.jpg" width="100%" height="150"><div class="text"><p><h2>Хвостатый марш</h2></p><button id ="like6">&#x2764;</button></div>			
+		</div>
+		
+		<div class="block">
+			<img src="puctures/объявление2.jpg" width="100%" height="150"><div class="text"><p><h2>Хвостатый марш</h2></p><button id ="like7">&#x2764;</button></div>			
+		</div>
+		
+		<div class="block">
+			<img src="puctures/объявление3.jpg" width="100%" height="150"><div class="text"><p><h2>Хвостатый марш</h2></p><button id ="like8">&#x2764;</button></div>			
+		</div>
+		
+		<div class="block">
+			<img src="puctures/объявление1.jpg" width="100%" height="150"><div class="text"><p><h2>Хвостатый марш</h2></p><button id ="like9">&#x2764;</button></div>			
+		</div>
+	
+		<div class="block">
+			<img src="puctures/объявление2.jpg" width="100%" height="150"><div class="text"><p><h2>Хвостатый марш</h2></p><button id ="like10">&#x2764;</button></div>		
+		</div>		
+		<button type="button" class="more"><img src="puctures/еще.png" alt="me" width="60" height="60"></button>
+	</div>
+</body>
+
+<script>
+	var btn = document.getElementById("like1");
+	btn.addEventListener("click", function() {
+		this.classList.add("active");
+	});
+	var btn = document.getElementById("like2");
+	btn.addEventListener("click", function() {
+		this.classList.add("active");
+	});
+	var btn = document.getElementById("like3");
+	btn.addEventListener("click", function() {
+		this.classList.add("active");
+	});
+	var btn = document.getElementById("like4");
+	btn.addEventListener("click", function() {
+		this.classList.add("active");
+	});
+	var btn = document.getElementById("like5");
+	btn.addEventListener("click", function() {
+		this.classList.add("active");
+	});
+	var btn = document.getElementById("like6");
+	btn.addEventListener("click", function() {
+		this.classList.add("active");
+	});
+	var btn = document.getElementById("like7");
+	btn.addEventListener("click", function() {
+		this.classList.add("active");
+	});
+	var btn = document.getElementById("like8");
+	btn.addEventListener("click", function() {
+		this.classList.add("active");
+	});
+	var btn = document.getElementById("like9");
+	btn.addEventListener("click", function() {
+		this.classList.add("active");
+	});
+	var btn = document.getElementById("like10");
+	btn.addEventListener("click", function() {
+		this.classList.add("active");
+	});
+</script>
+
+</html>
